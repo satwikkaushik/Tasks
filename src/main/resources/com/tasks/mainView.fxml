@@ -1,16 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.tasks.Controller">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+
+<AnchorPane fx:id="mainAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" styleClass="anchorMain" stylesheets="@styles/mainStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="sideAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="250.0" styleClass="anchorSideAnchor" stylesheets="@styles/mainStyle.css" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="738.0" AnchorPane.topAnchor="12.0">
+         <children>
+            <Label fx:id="greetingsLabel" layoutX="21.0" layoutY="70.0" styleClass="greetings" stylesheets="@styles/mainStyle.css" text="Good Morning," AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="26.25" />
+            <Label fx:id="usernameLabel" layoutX="14.0" layoutY="62.0" styleClass="greetings" stylesheets="@styles/mainStyle.css" text="Steave" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="62.0" />
+            <Button fx:id="newTaskButton" layoutX="12.0" layoutY="98.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="48.75" styleClass="newTaskButton" stylesheets="@styles/mainStyle.css" text="New Task" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="138.0" />
+            <AnchorPane fx:id="viewsPanel" layoutX="12.0" layoutY="215.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="140.0" prefWidth="200.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0">
+               <children>
+                  <Button fx:id="inboxButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="105.0" styleClass="sideButtons" stylesheets="@styles/mainStyle.css" text="Inbox" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="12.0" />
+                  <Button fx:id="todayButton" layoutX="121.0" layoutY="12.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="105.0" styleClass="sideButtons" stylesheets="@styles/mainStyle.css" text="Today" AnchorPane.rightAnchor="0.0" />
+                  <Button fx:id="allTasksButton" layoutY="72.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="105.0" styleClass="sideButtons" stylesheets="@styles/mainStyle.css" text="All Tasks" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" />
+                  <Button fx:id="completedButton" layoutX="121.0" layoutY="72.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="105.0" styleClass="sideButtons" stylesheets="@styles/mainStyle.css" text="Completed" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="priorityPane" layoutX="12.0" layoutY="402.0" prefHeight="214.0" prefWidth="226.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="402.0">
+               <children>
+                  <Button fx:id="highPriorityButton" alignment="CENTER" layoutX="42.0" layoutY="60.0" mnemonicParsing="false" prefHeight="39.0" styleClass="sideButtons" stylesheets="@styles/mainStyle.css" text="High Priority" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="12.0">
+                     <graphic>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="15.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="priorityFill_high" width="30.0">
+                           <stroke>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </stroke>
+                        </Rectangle>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="mediumPriorityButton" alignment="CENTER" layoutY="63.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="226.0" styleClass="sideButtons" stylesheets="@styles/mainStyle.css" text="Medium Priority" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <graphic>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="15.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="priorityFill_medium" width="30.0">
+                           <stroke>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </stroke>
+                        </Rectangle>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="lowPriorityButton" layoutY="114.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="226.0" styleClass="sideButtons" stylesheets="@styles/mainStyle.css" text="Low Priority">
+                     <graphic>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="15.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="priorityFill_low" width="30.0">
+                           <stroke>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </stroke>
+                        </Rectangle>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="noPriorityButton" layoutY="165.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="226.0" styleClass="sideButtons" stylesheets="@styles/mainStyle.css" text="No Priority">
+                     <graphic>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="15.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="priorityFill_no" width="30.0">
+                           <stroke>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </stroke>
+                        </Rectangle>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Text layoutX="14.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="viewsText" text="Priority View" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="titlePane" layoutX="250.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.75" prefWidth="750.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Text layoutX="342.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titleText" text="Tasks" />
+            <Button fx:id="exitAppButton" layoutX="715.0" layoutY="4.0" mnemonicParsing="false" styleClass="exitAppButton" stylesheets="@styles/mainStyle.css" text="X" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="2.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

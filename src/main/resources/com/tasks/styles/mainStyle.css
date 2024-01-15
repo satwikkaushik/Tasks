@@ -1,0 +1,112 @@
+.anchorMain{
+    -fx-background-color: #f7f0f5;
+}
+
+.anchorSideAnchor{
+    -fx-background-color: #22333B;
+    -fx-background-radius: 12;
+
+    -fx-effect: dropshadow( gaussian , #22333B , 28, 0, 0, 0 );
+}
+
+.greetings{
+    -fx-text-fill: #f7f0f5;
+    -fx-font-size: 25px;
+}
+
+.titleText{
+    -fx-fill: #22333B;
+    -fx-font-size: 25px;
+}
+
+.exitAppButton{
+    -fx-background-color: #f7f0f5;
+    -fx-background-radius: 24px;
+
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ef233c;
+}
+
+.exitAppButton: hover{
+    -fx-cursor: hand;
+
+    -fx-background-color: #ef233c;
+    -fx-background-radius: 24px;
+
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f7f0f5;
+
+    -fx-effect: dropshadow( gaussian , #ef233c , 24, 0, 0, 0 );
+}
+
+.newTaskButton{
+    -fx-font-size: 16px;
+    -fx-text-fill: #f7f0f5;
+
+    -fx-background-color: #22333B;
+    -fx-background-radius: 36px;
+
+    -fx-effect: dropshadow( gaussian , #f7f0f5 , 24, 0, 0, 0 );
+}
+
+.newTaskButton: hover{
+    -fx-cursor: hand;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #22333B;
+    -fx-background-radius: 36px;
+    -fx-background-color: #f7f0f5;
+
+    -fx-effect: dropshadow( gaussian , #f7f0f5 , 24, 0, 0, 0 );
+
+}
+
+.sideButtons{
+    -fx-font-size: 14px;
+    -fx-text-fill: #f7f0f5;
+
+    -fx-background-color: #22333B;
+    -fx-background-radius: 36px;
+
+    -fx-border-color: #f7f0f5;
+    -fx-border-radius: 36px;
+
+    -fx-graphic-text-gap: 10;
+}
+
+.sideButtons: hover{
+    -fx-cursor: hand;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #22333B;
+    -fx-background-radius: 36px;
+    -fx-background-color: #f7f0f5;
+
+    -fx-effect: dropshadow( gaussian , #f7f0f5 , 8, 0, 0, 0 );
+}
+
+.viewsText{
+    -fx-fill: #f7f0f5;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.priorityFill_high{
+    -fx-fill: #ef233c;
+}
+
+.priorityFill_medium{
+    -fx-fill: #f77f00;
+}
+
+.priorityFill_low{
+    -fx-fill: #588157;
+}
+
+.priorityFill_no{
+    -fx-fill: #f7f0f5;
+}
