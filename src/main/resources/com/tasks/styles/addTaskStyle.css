@@ -1,0 +1,83 @@
+.addTaskPane{
+    -fx-background-color: #f7f0f5;
+}
+
+.titleText{
+    -fx-fill: #22333B;
+    -fx-font-size: 18px;
+}
+
+.otherText{
+    -fx-fill: #22333B;
+    -fx-font-size: 16px;
+}
+
+.addButton{
+    -fx-font-size: 14px;
+    -fx-text-fill: #f7f0f5;
+
+    -fx-background-color: #22333B;
+    -fx-background-radius: 36px;
+
+    -fx-effect: dropshadow( gaussian , #22333B , 18, 0, 0, 0 );
+}
+
+.addButton: hover{
+    -fx-cursor: hand;
+
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f7f0f5;
+
+    -fx-background-color: #22333B;
+    -fx-background-radius: 36px;
+
+    -fx-effect: dropshadow( gaussian , #22333B , 26, 0, 0, 0 );
+}
+
+.cancelButton{
+    -fx-font-size: 14px;
+    -fx-text-fill: #22333B;
+
+    -fx-background-color: #f7f0f5;
+    -fx-background-radius: 36px;
+
+    -fx-border-color: #22333B;
+    -fx-border-radius: 32px;
+}
+
+.cancelButton: hover{
+    -fx-cursor: hand;
+
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #22333B;
+
+    -fx-background-color: #f7f0f5;
+    -fx-background-radius: 36px;
+
+    -fx-border-color: #22333B;
+    -fx-border-radius: 36px;
+}
+
+.textField{
+    -fx-background-color: #f7f0f5;
+
+    -fx-border-color: #22333B;
+    -fx-border-radius: 24px;
+
+    -fx-font-weight: bold;
+}
+
+.textArea{
+    -fx-background-color: #f7f0f5;
+    -fx-background-radius: 24px;
+
+    -fx-border-color: #22333B;
+    -fx-border-radius: 24px;
+}
+
+.deadlinePicker{
+    -fx-border-color: #22333B;
+    -fx-border-radius: 24px;
+}
