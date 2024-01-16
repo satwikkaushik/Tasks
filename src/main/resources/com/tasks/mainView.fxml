@@ -9,8 +9,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane fx:id="mainAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" styleClass="anchorMain" stylesheets="@styles/mainStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="mainAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" styleClass="anchorMain" stylesheets="@styles/mainStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tasks.controller.MainController">
    <children>
       <AnchorPane fx:id="sideAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="250.0" styleClass="anchorSideAnchor" stylesheets="@styles/mainStyle.css" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="738.0" AnchorPane.topAnchor="12.0">
          <children>
@@ -123,7 +122,7 @@
       <AnchorPane fx:id="titlePane" layoutX="250.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.75" prefWidth="750.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="0.0">
          <children>
             <Text layoutX="342.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titleText" text="Tasks" />
-            <Button fx:id="exitAppButton" layoutX="715.0" layoutY="4.0" mnemonicParsing="false" styleClass="exitAppButton" stylesheets="@styles/mainStyle.css" text="X" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="2.0" />
+            <Button fx:id="exitAppButton" layoutX="715.0" layoutY="4.0" mnemonicParsing="false" onAction="#exitAppLogic" styleClass="exitAppButton" stylesheets="@styles/mainStyle.css" text="X" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="2.0" />
          </children>
       </AnchorPane>
    </children>
