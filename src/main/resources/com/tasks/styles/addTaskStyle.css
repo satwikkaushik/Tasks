@@ -25,7 +25,7 @@
 .addButton: hover{
     -fx-cursor: hand;
 
-    -fx-font-size: 16px;
+    -fx-font-size: 14px;
     -fx-font-weight: bold;
     -fx-text-fill: #f7f0f5;
 
@@ -59,6 +59,32 @@
     -fx-border-color: #22333B;
     -fx-border-radius: 36px;
 }
+
+.deleteButton{
+     -fx-font-size: 14px;
+     -fx-text-fill: #ef233c;
+
+     -fx-background-color: #f7f0f5;
+     -fx-background-radius: 36px;
+
+     -fx-border-color: #ef233c;
+     -fx-border-radius: 32px;
+ }
+
+.deleteButton: hover{
+    -fx-cursor: hand;
+
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f7f0f5;
+
+    -fx-background-color: #ef233c;
+    -fx-background-radius: 36px;
+
+    -fx-border-color: #ef233c;
+    -fx-border-radius: 36px;
+}
+
 
 .textField{
     -fx-background-color: #f7f0f5;
