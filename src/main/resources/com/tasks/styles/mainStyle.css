@@ -73,11 +73,35 @@
 
     -fx-border-color: #f7f0f5;
     -fx-border-radius: 36px;
-
-    -fx-graphic-text-gap: 10;
 }
 
 .sideButtons: hover{
+    -fx-cursor: hand;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #22333B;
+    -fx-background-radius: 36px;
+    -fx-background-color: #f7f0f5;
+
+    -fx-effect: dropshadow( gaussian , #f7f0f5 , 8, 0, 0, 0 );
+}
+
+.sideButtons2{
+    -fx-font-size: 14px;
+    -fx-text-fill: #f7f0f5;
+
+    -fx-background-color: #22333B;
+    -fx-background-radius: 36px;
+
+    -fx-border-color: #f7f0f5;
+    -fx-border-radius: 36px;
+
+    -fx-padding: 0 0 0 20;
+    -fx-graphic-text-gap: 20;
+}
+
+.sideButtons2: hover{
     -fx-cursor: hand;
     -fx-font-size: 16px;
     -fx-font-weight: bold;

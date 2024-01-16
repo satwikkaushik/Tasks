@@ -26,7 +26,7 @@
             </AnchorPane>
             <AnchorPane fx:id="priorityPane" layoutX="12.0" layoutY="402.0" prefHeight="214.0" prefWidth="226.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="402.0">
                <children>
-                  <Button fx:id="highPriorityButton" alignment="CENTER" layoutX="42.0" layoutY="60.0" mnemonicParsing="false" prefHeight="39.0" styleClass="sideButtons" stylesheets="@styles/mainStyle.css" text="High Priority" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="12.0">
+                  <Button fx:id="highPriorityButton" alignment="BASELINE_LEFT" layoutX="42.0" layoutY="60.0" mnemonicParsing="false" prefHeight="39.0" styleClass="sideButtons2" stylesheets="@styles/mainStyle.css" text="High Priority" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="12.0">
                      <graphic>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="15.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="priorityFill_high" width="30.0">
                            <stroke>
@@ -48,7 +48,7 @@
                         </Rectangle>
                      </graphic>
                   </Button>
-                  <Button fx:id="mediumPriorityButton" alignment="CENTER" layoutY="63.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="226.0" styleClass="sideButtons" stylesheets="@styles/mainStyle.css" text="Medium Priority" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                  <Button fx:id="mediumPriorityButton" alignment="BASELINE_LEFT" layoutY="63.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="226.0" styleClass="sideButtons2" stylesheets="@styles/mainStyle.css" text="Medium Priority" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                      <graphic>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="15.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="priorityFill_medium" width="30.0">
                            <stroke>
@@ -70,7 +70,7 @@
                         </Rectangle>
                      </graphic>
                   </Button>
-                  <Button fx:id="lowPriorityButton" layoutY="114.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="226.0" styleClass="sideButtons" stylesheets="@styles/mainStyle.css" text="Low Priority">
+                  <Button fx:id="lowPriorityButton" alignment="BASELINE_LEFT" layoutY="114.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="226.0" styleClass="sideButtons2" stylesheets="@styles/mainStyle.css" text="Low Priority">
                      <graphic>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="15.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="priorityFill_low" width="30.0">
                            <stroke>
@@ -92,7 +92,7 @@
                         </Rectangle>
                      </graphic>
                   </Button>
-                  <Button fx:id="noPriorityButton" layoutY="165.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="226.0" styleClass="sideButtons" stylesheets="@styles/mainStyle.css" text="No Priority">
+                  <Button fx:id="noPriorityButton" alignment="BASELINE_LEFT" layoutY="165.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="226.0" styleClass="sideButtons2" stylesheets="@styles/mainStyle.css" text="No Priority">
                      <graphic>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="15.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="priorityFill_no" width="30.0">
                            <stroke>
