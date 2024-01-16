@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
@@ -125,5 +127,76 @@
             <Button fx:id="exitAppButton" layoutX="715.0" layoutY="4.0" mnemonicParsing="false" onAction="#exitAppLogic" styleClass="exitAppButton" stylesheets="@styles/mainStyle.css" text="X" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="2.0" />
          </children>
       </AnchorPane>
+      <AnchorPane fx:id="emptyPane" layoutX="286.0" layoutY="120.0" prefHeight="581.0" prefWidth="702.0" styleClass="emptyPane" stylesheets="@styles/cellsView.css" visible="false" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="286.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="132.0">
+         <children>
+            <Label layoutX="238.0" layoutY="223.0" prefHeight="123.0" prefWidth="226.0" styleClass="emptyPane" stylesheets="@styles/cellsView.css" text="Nothing for today!" wrapText="true" />
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER" layoutX="286.0" layoutY="71.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="702.0" styleClass="topBar" stylesheets="@styles/cellsView.css" AnchorPane.leftAnchor="286.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="71.0">
+         <children>
+            <Label text="|">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" text="Title" HBox.hgrow="NEVER">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="40.0" right="40.0" />
+               </padding>
+            </Label>
+            <Label layoutX="20.0" layoutY="10.0" text="|">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="45.0" right="45.0" />
+               </padding>
+            </Label>
+            <Label layoutX="20.0" layoutY="10.0" text="Deadline">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="40.0" right="40.0" />
+               </padding>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" text="|">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="45.0" right="45.0" />
+               </padding>
+            </Label>
+            <Label layoutX="56.0" layoutY="10.0" text="Priority">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="40.0" right="40.0" />
+               </padding>
+            </Label>
+            <Label layoutX="142.0" layoutY="10.0" text="|">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="5.0" />
+         </padding>
+      </HBox>
    </children>
 </AnchorPane>

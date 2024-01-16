@@ -1,0 +1,39 @@
+.emptyPane{
+    -fx-background-color: #f7f0f5;
+
+    -fx-text-fill: #adb5bd;
+
+    -fx-font-size: 36px;
+    -fx-fill: #22333B;
+}
+
+.topBar{
+    -fx-font-size: 18px;
+    -fx-text-fill: #22333B;
+
+    -fx-background-color: #f7f0f5;
+    -fx-border-color: #22333B;
+    -fx-border-radius: 24px;
+}
+
+.cells{
+    -fx-background-color: #f7f0f5;
+}
+
+.cellsLabels{
+    -fx-font-size: 16px;
+    -fx-text-fill: #22333B;
+}
+
+.cellsButtons{
+    -fx-font-size: 16px;
+    -fx-text-fill: #22333B;
+    -fx-background-color: #f7f0f5;
+}
+
+.cellsButtons: hover{
+    -fx-cursor: hand;
+    -fx-font-size: 16px;
+    -fx-text-fill: #22333B;
+    -fx-background-color: #f7f0f5;
+}

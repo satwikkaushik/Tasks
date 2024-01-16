@@ -21,7 +21,7 @@
 
 .exitAppButton{
     -fx-background-color: #f7f0f5;
-    -fx-background-radius: 24px;
+    -fx-background-radius: 16px;
 
     -fx-font-size: 20px;
     -fx-font-weight: bold;
@@ -32,7 +32,7 @@
     -fx-cursor: hand;
 
     -fx-background-color: #ef233c;
-    -fx-background-radius: 24px;
+    -fx-background-radius: 16px;
 
     -fx-font-size: 20px;
     -fx-font-weight: bold;
