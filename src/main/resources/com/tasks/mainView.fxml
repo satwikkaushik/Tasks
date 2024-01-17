@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
@@ -20,7 +21,7 @@
             <Button fx:id="newTaskButton" layoutX="12.0" layoutY="98.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="48.75" styleClass="newTaskButton" stylesheets="@styles/mainStyle.css" text="New Task" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="138.0" />
             <AnchorPane fx:id="viewsPanel" layoutX="12.0" layoutY="215.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="140.0" prefWidth="200.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0">
                <children>
-                  <Button fx:id="inboxButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="105.0" styleClass="sideButtons" stylesheets="@styles/mainStyle.css" text="Inbox" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="12.0" />
+                  <Button fx:id="inboxButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#refresh" prefHeight="48.0" prefWidth="105.0" styleClass="sideButtons" stylesheets="@styles/mainStyle.css" text="Inbox" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="12.0" />
                   <Button fx:id="todayButton" layoutX="121.0" layoutY="12.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="105.0" styleClass="sideButtons" stylesheets="@styles/mainStyle.css" text="Today" AnchorPane.rightAnchor="0.0" />
                   <Button fx:id="allTasksButton" layoutY="72.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="105.0" styleClass="sideButtons" stylesheets="@styles/mainStyle.css" text="All Tasks" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" />
                   <Button fx:id="completedButton" layoutX="121.0" layoutY="72.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="105.0" styleClass="sideButtons" stylesheets="@styles/mainStyle.css" text="Completed" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="0.0" />
@@ -198,5 +199,6 @@
             <Insets bottom="5.0" />
          </padding>
       </HBox>
+      <VBox fx:id="tasksVBox" layoutX="286.0" layoutY="132.0" prefHeight="556.0" prefWidth="702.0" />
    </children>
 </AnchorPane>

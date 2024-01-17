@@ -5,16 +5,23 @@ import java.time.LocalDateTime;
 public class Task {
     String title;
     String description;
-    LocalDateTime deadline;
+    String deadline;
     String priority;
     boolean isComplete;
 
-    public Task(String title, String description, LocalDateTime deadline, String priority) {
+    public Task(String title, String description, String deadline, String priority) {
         this.title = title;
         this.description = description;
         this.deadline = deadline;
         this.priority = priority;
         this.isComplete = false;
+    }
+
+    // TODO : this constructor is just for testing
+    public Task(String title, String deadline, String priority) {
+        this.title = title;
+        this.deadline = deadline;
+        this.priority = priority;
     }
 
     public String getTitle() {
@@ -25,7 +32,7 @@ public class Task {
         return description;
     }
 
-    public LocalDateTime getDeadline() {
+    public String getDeadline() {
         return deadline;
     }
 
@@ -45,7 +52,7 @@ public class Task {
         this.description = description;
     }
 
-    public void setDeadline(LocalDateTime deadline) {
+    public void setDeadline(String deadline) {
         this.deadline = deadline;
     }
 

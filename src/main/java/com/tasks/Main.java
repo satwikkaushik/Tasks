@@ -1,5 +1,6 @@
 package com.tasks;
 
+import com.tasks.controller.MainController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
