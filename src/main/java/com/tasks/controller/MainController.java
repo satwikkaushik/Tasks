@@ -1,6 +1,6 @@
 package com.tasks.controller;
 
-import com.tasks.Task;
+import com.tasks.modules.Task;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
