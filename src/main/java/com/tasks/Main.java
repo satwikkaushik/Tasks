@@ -1,6 +1,7 @@
 package com.tasks;
 
 import com.tasks.controller.MainController;
+import com.tasks.modules.DataBase;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -8,6 +9,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class Main extends Application {
     @Override
@@ -22,6 +24,12 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
+        try {
+            DataBase.makeConnection();
+            DataBase.createTable();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         launch();
     }
 }

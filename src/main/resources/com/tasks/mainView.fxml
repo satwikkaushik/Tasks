@@ -18,7 +18,7 @@
          <children>
             <Label fx:id="greetingsLabel" layoutX="21.0" layoutY="70.0" styleClass="greetings" stylesheets="@styles/mainStyle.css" text="Good Morning," AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="26.25" />
             <Label fx:id="usernameLabel" layoutX="14.0" layoutY="62.0" styleClass="greetings" stylesheets="@styles/mainStyle.css" text="Steave" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="62.0" />
-            <Button fx:id="newTaskButton" layoutX="12.0" layoutY="98.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="48.75" styleClass="newTaskButton" stylesheets="@styles/mainStyle.css" text="New Task" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="138.0" />
+            <Button fx:id="newTaskButton" layoutX="12.0" layoutY="98.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addNewTask" prefHeight="48.75" styleClass="newTaskButton" stylesheets="@styles/mainStyle.css" text="New Task" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="138.0" />
             <AnchorPane fx:id="viewsPanel" layoutX="12.0" layoutY="215.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="140.0" prefWidth="200.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0">
                <children>
                   <Button fx:id="inboxButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#refresh" prefHeight="48.0" prefWidth="105.0" styleClass="sideButtons" stylesheets="@styles/mainStyle.css" text="Inbox" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="12.0" />
